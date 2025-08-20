@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:backgroundTint="#A85E25"
+    android:textAlignment="center">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -13,48 +14,48 @@
         android:background="#D9C19E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/loadingText"
-            android:layout_width="216dp"
-            android:layout_height="35dp"
-            android:text="Loading your perfect cup..."
-            android:textColor="#8A3C17"
-            android:textSize="18sp"
+            android:id="@+id/onboarding2Text1"
+            android:layout_width="339dp"
+            android:layout_height="124dp"
+            android:gravity="center"
+            android:text="Place your order ahead and pick it up at your convenience"
+            android:textColor="#FAF3E0"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.558"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.895" />
+            app:layout_constraintVertical_bias="0.685" />
 
         <ImageView
-            android:id="@+id/logoImage"
-            android:layout_width="361dp"
-            android:layout_height="436dp"
-            app:layout_constraintBottom_toTopOf="@+id/loadingText"
+            android:id="@+id/onboarding2"
+            android:layout_width="257dp"
+            android:layout_height="344dp"
+            app:layout_constraintBottom_toTopOf="@+id/onboarding2Text1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.5"
-            app:srcCompat="@drawable/beige_and_brown_vintage_round1_coffee_shop_logo" />
+            app:layout_constraintVertical_bias="0.597"
+            app:srcCompat="@drawable/onboarding2" />
 
-        <ProgressBar
-            android:id="@+id/Loadingbar"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="151dp"
-            android:layout_height="23dp"
-            app:layout_constraintBottom_toTopOf="@+id/loadingText"
+        <Button
+            android:id="@+id/btnnext2"
+            android:layout_width="135dp"
+            android:layout_height="53dp"
+            android:backgroundTint="#A85E25"
+            android:text="Next"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.898"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/logoImage"
-            app:layout_constraintVertical_bias="1.0" />
-
+            app:layout_constraintTop_toBottomOf="@+id/onboarding2Text1"
+            app:layout_constraintVertical_bias="0.339" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

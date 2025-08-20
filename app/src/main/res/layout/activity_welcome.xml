@@ -16,49 +16,48 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/onboardingText1"
-            android:layout_width="371dp"
-            android:layout_height="164dp"
+            android:id="@+id/welcomeText"
+            android:layout_width="398dp"
+            android:layout_height="107dp"
             android:gravity="center"
-            android:text="Browse and order from a variety of freshly brewed coffees."
+            android:text="Welcome  to Shadow Coffee Shop"
             android:textAlignment="center"
             android:textColor="#FAF3E0"
-            android:textSize="30sp"
+            android:textSize="40sp"
             android:textStyle="bold|italic"
-            app:autoSizeTextType="none"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintHorizontal_bias="0.461"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.673" />
+            app:layout_constraintVertical_bias="0.597" />
+
+        <ImageView
+            android:id="@+id/welcomeImage"
+            android:layout_width="276dp"
+            android:layout_height="348dp"
+            app:layout_constraintBottom_toTopOf="@+id/welcomeText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/welcome" />
 
         <Button
-            android:id="@+id/btnnext"
-            android:layout_width="135dp"
-            android:layout_height="53dp"
+            android:id="@+id/button"
+            android:layout_width="178dp"
+            android:layout_height="61dp"
             android:backgroundTint="#A85E25"
-            android:text="Next"
+            android:text="Get Started"
             android:textColor="#FAF3E0"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.898"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/onboardingText1"
-            app:layout_constraintVertical_bias="0.339" />
-
-        <ImageView
-            android:id="@+id/onboarding1"
-            android:layout_width="252dp"
-            android:layout_height="254dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.58"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.19"
-            app:srcCompat="@drawable/_f16a413b698f67c34e1e3938d388e4a" />
+            app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+            app:layout_constraintVertical_bias="0.26" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
