@@ -6,5 +6,8 @@
     <color name="coffee_brown">#A85E25</color> <!--Button color-->
     <color name="soft_creamy_beige">#FAF3E0</color> <!--Text color for dark background-->
     <color name="Dark_Coffee">#571F15</color> <!--Text color for light background-->
+    <color name="Light_Golden_Brown">#D1A370</color> <!--some buttons-->
+    <color name="dark_reddish_brown">#632B20</color> <!--some buttons-->
+
 
 </resources>

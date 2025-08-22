@@ -5,57 +5,50 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#A85E25"
-    android:textAlignment="center">
+    android:background="@color/soft_beige"
+    tools:context=".Onboarding2">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#D9C19E"
+    <ImageView
+        android:id="@+id/onboarding2Anime"
+        android:layout_width="288dp"
+        android:layout_height="345dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067"
+        app:srcCompat="@drawable/onboarding2" />
 
-        <TextView
-            android:id="@+id/onboarding2Text1"
-            android:layout_width="339dp"
-            android:layout_height="124dp"
-            android:gravity="center"
-            android:text="Place your order ahead and pick it up at your convenience"
-            android:textColor="#FAF3E0"
-            android:textSize="30sp"
-            android:textStyle="bold|italic"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.685" />
+    <TextView
+        android:id="@+id/onboarding2Text"
+        android:layout_width="364dp"
+        android:layout_height="121dp"
+        android:text="Place your order ahead and pick it up at your convenience"
+        android:textAlignment="center"
+        android:textColor="@color/soft_creamy_beige"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding2Anime"
+        app:layout_constraintVertical_bias="0.167" />
 
-        <ImageView
-            android:id="@+id/onboarding2"
-            android:layout_width="257dp"
-            android:layout_height="344dp"
-            app:layout_constraintBottom_toTopOf="@+id/onboarding2Text1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.597"
-            app:srcCompat="@drawable/onboarding2" />
-
-        <Button
-            android:id="@+id/btnnext2"
-            android:layout_width="135dp"
-            android:layout_height="53dp"
-            android:backgroundTint="#A85E25"
-            android:text="Next"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.898"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/onboarding2Text1"
-            app:layout_constraintVertical_bias="0.339" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+    <Button
+        android:id="@+id/onboardin2Next"
+        android:layout_width="123dp"
+        android:layout_height="58dp"
+        android:backgroundTint="@color/coffee_brown"
+        android:text="NEXT"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding2Text"
+        app:layout_constraintVertical_bias="0.312" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,49 +6,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/soft_beige"
-    tools:context=".Onboarding1">
-
-    <ImageView
-        android:id="@+id/onboardin1IAnime"
-        android:layout_width="267dp"
-        android:layout_height="334dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.103"
-        app:srcCompat="@drawable/_f16a413b698f67c34e1e3938d388e4a" />
+    tools:context=".Welciome">
 
     <TextView
-        android:id="@+id/onboardin1IText"
+        android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Browse and order from a variety of freshly brewed coffees."
+        android:gravity="center"
+        android:text="Welcome  to Shadow Coffee Shop"
         android:textAlignment="center"
         android:textColor="@color/soft_creamy_beige"
-        android:textSize="30sp"
+        android:textSize="40sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/onboardin1IAnime"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.608" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="268dp"
+        android:layout_height="322dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/welcomeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/welcome" />
 
     <Button
-        android:id="@+id/onboardin1Next"
-        android:layout_width="123dp"
+        android:id="@+id/button"
+        android:layout_width="168dp"
         android:layout_height="58dp"
         android:backgroundTint="@color/coffee_brown"
-        android:text="NEXT"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:text="GET STARTED"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/onboardin1IText"
-        app:layout_constraintVertical_bias="0.372" />
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+        app:layout_constraintVertical_bias="0.433" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
