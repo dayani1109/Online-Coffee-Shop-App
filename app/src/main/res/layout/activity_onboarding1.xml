@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/soft_beige"
-    tools:context=".Onboarding1">
+    tools:context=".onboarding1">
 
     <ImageView
         android:id="@+id/onboardin1IAnime"

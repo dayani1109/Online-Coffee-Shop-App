@@ -12,13 +12,52 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OnlineCoffeeShopApp">
         <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".TrackOrder"
+            android:exported="false" />
+        <activity
+            android:name=".OrderPlaceSuccessful"
+            android:exported="false" />
+        <activity
+            android:name=".OrderCancelSuccessful"
+            android:exported="false" />
+        <activity
+            android:name=".orderConfirm"
+            android:exported="false" />
+        <activity
+            android:name=".CheckoutPage"
+            android:exported="false" />
+        <activity
+            android:name=".addnewcard"
+            android:exported="false" />
+        <activity
+            android:name=".Cart"
+            android:exported="false" />
+        <activity
+            android:name=".blackTeaPage"
+            android:exported="false" />
+        <activity
+            android:name=".coffee_MilkshakePage"
+            android:exported="false" />
+        <activity
+            android:name=".CappuccinoPage"
+            android:exported="false" />
+        <activity
+            android:name=".HotTeaHome"
+            android:exported="false" />
+        <activity
+            android:name=".ColdCoffeeHome"
+            android:exported="false" />
+        <activity
             android:name=".HotCoffeeHome"
             android:exported="false" />
         <activity
-            android:name=".Onboarding1"
+            android:name=".onboarding1"
             android:exported="false" />
         <activity
-            android:name=".Onboarding2"
+            android:name=".onboarding2"
             android:exported="false" />
         <activity
             android:name=".Welciome"

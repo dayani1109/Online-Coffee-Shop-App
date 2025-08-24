@@ -45,7 +45,7 @@
             app:srcCompat="@drawable/beige_and_brown_vintage_round1_coffee_shop_logo" />
 
         <ProgressBar
-            android:id="@+id/Loadingbar"
+            android:id="@+id/Loadingbar1"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="151dp"
             android:layout_height="23dp"

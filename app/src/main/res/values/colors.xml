@@ -8,6 +8,21 @@
     <color name="Dark_Coffee">#571F15</color> <!--Text color for light background-->
     <color name="Light_Golden_Brown">#D1A370</color> <!--some buttons-->
     <color name="dark_reddish_brown">#632B20</color> <!--some buttons-->
+    <color name="medium_dark_brown">#744D30</color> <!--some fonts-->
+    <color name="warm_medium_brown">#A77A48</color> <!--some label background-->
+    <color name="Dark_Chocolate_Brown">#594430</color> <!--some Button background-->
+    <color name="Cinnamon">#934A12</color> <!--some Button background-->
+    <color name="Light_Coffee">#BD9169</color> <!--some Button background-->
+
+    815C3A
+    592A0E
+    673209
+    B67849
+    693829
+    C0824A
+
+
+
 
 
 </resources>

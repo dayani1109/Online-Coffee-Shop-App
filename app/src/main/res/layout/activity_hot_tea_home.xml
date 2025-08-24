@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/soft_beige"
-    tools:context=".HotCoffeeHome">
+    tools:context=".HotTeaHome">
 
     <LinearLayout
         android:id="@+id/linearLayout4"
@@ -79,7 +79,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <SearchView
         android:id="@+id/searchView3"
@@ -111,8 +111,9 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:backgroundTint="#AF732B"
+            android:backgroundTint="#C3A685"
             android:text="Hot Coffee"
+            android:textColor="#632B20"
             android:textSize="14sp"
             android:textStyle="bold" />
 
@@ -136,9 +137,9 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="20dp"
             android:layout_weight="1"
-            android:backgroundTint="#C3A685"
+            android:backgroundTint="#AF732B"
             android:text="Hot Tea"
-            android:textColor="#632B20"
+            android:textColor="@color/white"
             android:textSize="14sp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -169,31 +170,31 @@
             android:id="@+id/MasalaChaiprice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rs.1200.00"
+            android:text="Rs.400.00"
             android:textColor="@color/Dark_Coffee"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.79"
+            app:layout_constraintHorizontal_bias="0.758"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.875" />
+            app:layout_constraintVertical_bias="0.877" />
 
         <TextView
             android:id="@+id/MasalaChaiNmae"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Caramel Latte"
+            android:text="Masala Chai"
             android:textColor="@color/Dark_Coffee"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.815"
+            app:layout_constraintHorizontal_bias="0.778"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.833" />
+            app:layout_constraintVertical_bias="0.831" />
 
         <ImageView
             android:id="@+id/whiteRec51"
@@ -211,31 +212,32 @@
             android:id="@+id/gingerTeaPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rs.1200.00"
+            android:text="Rs.750.00"
             android:textColor="@color/Dark_Coffee"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.206"
+            app:layout_constraintHorizontal_bias="0.212"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.876" />
+            app:layout_constraintVertical_bias="0.887" />
 
         <TextView
             android:id="@+id/gingerTeaName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hot Chocolate"
+            android:layout_width="158dp"
+            android:layout_height="42dp"
+            android:text="Lemon and Ginger Tea"
+            android:textAlignment="center"
             android:textColor="@color/Dark_Coffee"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.219"
+            app:layout_constraintHorizontal_bias="0.154"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.834" />
+            app:layout_constraintVertical_bias="0.851" />
 
         <ImageView
             android:id="@+id/whiteRec41"
@@ -253,7 +255,7 @@
             android:id="@+id/LemonTeaPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rs.1400.00"
+            android:text="Rs.500.00"
             android:textColor="@color/Dark_Coffee"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -268,13 +270,13 @@
             android:id="@+id/lemonTeaName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Latte"
+            android:text="Lemon Tea"
             android:textColor="@color/Dark_Coffee"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.742"
+            app:layout_constraintHorizontal_bias="0.783"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.533" />
@@ -299,7 +301,7 @@
             android:id="@+id/herbalTeaprice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rs.1300.00"
+            android:text="Rs.650.00"
             android:textColor="@color/Dark_Coffee"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -314,13 +316,13 @@
             android:id="@+id/herbalTeaName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Americano"
+            android:text="Herbal Tea"
             android:textColor="@color/Dark_Coffee"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.758"
+            app:layout_constraintHorizontal_bias="0.766"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.232" />
@@ -342,7 +344,7 @@
             android:id="@+id/BlackTeaPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rs.1500.00"
+            android:text="Rs.900.00"
             android:textColor="@color/Dark_Coffee"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -353,23 +355,11 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.27" />
 
-        <ImageView
-            android:id="@+id/CappuccinoImage"
-            android:layout_width="131dp"
-            android:layout_height="129dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.157"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.081"
-            app:srcCompat="@drawable/espresso" />
-
         <TextView
             android:id="@+id/BlackTeaName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cappuccino"
+            android:text="Black Tea"
             android:textColor="@color/Dark_Coffee"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -379,18 +369,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.233" />
-
-        <ImageView
-            android:id="@+id/AmericanoImage"
-            android:layout_width="130dp"
-            android:layout_height="150dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.81"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.067"
-            app:srcCompat="@drawable/americano1" />
 
         <ImageView
             android:id="@+id/whiteRec31"
@@ -408,13 +386,13 @@
             android:id="@+id/greenTeaPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rs.1500.00"
+            android:text="Rs.850.00"
             android:textColor="@color/Dark_Coffee"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.239"
+            app:layout_constraintHorizontal_bias="0.227"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.573" />
@@ -423,76 +401,88 @@
             android:id="@+id/greenTeaName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mocha"
+            android:text="Green Tea"
             android:textColor="@color/Dark_Coffee"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.247"
+            app:layout_constraintHorizontal_bias="0.227"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.534" />
+            app:layout_constraintVertical_bias="0.533" />
 
         <ImageView
-            android:id="@+id/mochaImage"
+            android:id="@+id/blackteaImage"
             android:layout_width="131dp"
             android:layout_height="129dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.157"
+            app:layout_constraintHorizontal_bias="0.167"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.42"
-            app:srcCompat="@drawable/moha" />
+            app:layout_constraintVertical_bias="0.072"
+            app:srcCompat="@drawable/blacktea" />
 
         <ImageView
-            android:id="@+id/LatteImage"
+            android:id="@+id/herbalTeaImage"
             android:layout_width="131dp"
             android:layout_height="129dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.807"
+            app:layout_constraintHorizontal_bias="0.825"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.418"
-            app:srcCompat="@drawable/latte" />
+            app:layout_constraintVertical_bias="0.071"
+            app:srcCompat="@drawable/herbal" />
 
         <ImageView
-            android:id="@+id/HotChocolateImage"
+            android:id="@+id/imageView5"
             android:layout_width="131dp"
             android:layout_height="129dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.157"
+            app:layout_constraintHorizontal_bias="0.167"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.761"
-            app:srcCompat="@drawable/hotchocalate" />
+            app:layout_constraintVertical_bias="0.414"
+            app:srcCompat="@drawable/greentea" />
 
         <ImageView
-            android:id="@+id/CaramelLatteImage"
+            android:id="@+id/lemonTeaImage"
             android:layout_width="131dp"
             android:layout_height="129dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.811"
+            app:layout_constraintHorizontal_bias="0.804"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.76"
-            app:srcCompat="@drawable/caramellatte" />
+            app:layout_constraintVertical_bias="0.412"
+            app:srcCompat="@drawable/lemon" />
 
         <ImageView
-            android:id="@+id/cappuImage"
+            android:id="@+id/gingerTeaImage"
             android:layout_width="131dp"
             android:layout_height="129dp"
-            app:layout_constraintBottom_toTopOf="@+id/whiteRec31"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.157"
+            app:layout_constraintHorizontal_bias="0.164"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.358"
-            app:srcCompat="@drawable/espresso" />
+            app:layout_constraintVertical_bias="0.771"
+            app:srcCompat="@drawable/ginger" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="131dp"
+            android:layout_height="129dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.825"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.77"
+            app:srcCompat="@drawable/masalachai" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
