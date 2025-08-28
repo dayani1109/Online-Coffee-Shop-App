@@ -6,51 +6,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/soft_beige"
-    tools:context=".onboarding2">
+    tools:context=".Welcome">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/onboarding3gif"
+        android:layout_width="205dp"
+        android:layout_height="246dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/welcome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175" />
 
     <TextView
-        android:id="@+id/onboarding2Text"
-        android:layout_width="347dp"
-        android:layout_height="96dp"
+        android:id="@+id/onboarding3Text"
+        android:layout_width="356dp"
+        android:layout_height="126dp"
         android:fontFamily="serif"
-        android:text="@string/onboarding2_text"
+        android:text="@string/welcome_message"
         android:textAlignment="center"
-        android:textColor="@color/soft_creamy_beige"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.626" />
+        app:layout_constraintVertical_bias="0.633" />
 
     <Button
-        android:id="@+id/onboardin2Next"
-        android:layout_width="133dp"
-        android:layout_height="52dp"
+        android:id="@+id/welcomBtn"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
         android:backgroundTint="@color/coffee_brown"
-        android:text="@string/onboarding1_next"
+        android:text="@string/welcome_button"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/onboarding2Text"
-        app:layout_constraintVertical_bias="0.437" />
-
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/onboarding3Text"
-        android:layout_width="238dp"
-        android:layout_height="267dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/onboarding2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.129" />
+        app:layout_constraintVertical_bias="0.828" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

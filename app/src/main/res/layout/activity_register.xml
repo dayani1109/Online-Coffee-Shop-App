@@ -14,158 +14,168 @@
         android:background="@color/soft_beige"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="166dp"
-            android:layout_height="165dp"
+            android:id="@+id/registerLogo"
+            android:layout_width="161dp"
+            android:layout_height="156dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.051"
+            app:layout_constraintVertical_bias="0.02"
             app:srcCompat="@drawable/beige_and_brown_vintage_round1_coffee_shop_logo" />
+
+        <TextView
+            android:id="@+id/registerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/register_title"
+            android:textColor="@color/Dark_Coffee"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.241"
+            tools:layout_editor_absoluteX="0dp" />
 
         <LinearLayout
             android:id="@+id/linearLayout2"
-            android:layout_width="398dp"
-            android:layout_height="343dp"
+            android:layout_width="341dp"
+            android:layout_height="292dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <TextView
-                android:id="@+id/registerText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:text="Register"
-                android:textColor="@color/Dark_Coffee"
-                android:textSize="30sp"
-                android:textStyle="bold" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.523">
 
             <EditText
                 android:id="@+id/registerName"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="10dp"
                 android:ems="10"
-                android:hint="Enter your Name"
+                android:hint="@string/hint_name"
                 android:inputType="text"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/registerEmail"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="10dp"
                 android:ems="10"
-                android:hint="Enter your Email"
+                android:hint="@string/hint_email"
                 android:inputType="textEmailAddress"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/registerPhone"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="10dp"
                 android:ems="10"
-                android:hint="Enter your Phone Number"
+                android:hint="@string/hint_phone"
                 android:inputType="phone"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/registerPassword"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="10dp"
                 android:ems="10"
-                android:hint="Enter your Password"
+                android:hint="@string/hint_password"
                 android:inputType="textPassword"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/registerConfirmPassword"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="10dp"
                 android:ems="10"
-                android:hint="Confirm Password"
+                android:hint="@string/hint_confirm_password"
                 android:inputType="textPassword"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
         </LinearLayout>
 
         <Button
             android:id="@+id/registerButton"
-            android:layout_width="123dp"
-            android:layout_height="53dp"
+            android:layout_width="138dp"
+            android:layout_height="48dp"
             android:backgroundTint="#A85E25"
-            android:text="Register"
+            android:text="@string/register_button"
             android:textAlignment="center"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-            app:layout_constraintVertical_bias="0.113" />
+            app:layout_constraintVertical_bias="0.124" />
+
+        <TextView
+            android:id="@+id/registerSignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D1A370"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/signin_text"
+            android:textAlignment="center"
+            android:textColor="@color/Dark_Coffee"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.863"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.906" />
 
         <TextView
             android:id="@+id/haveAccountText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="39dp"
-            android:layout_marginBottom="64dp"
             android:background="#D1A370"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
-            android:paddingRight="10dp"
+            android:paddingRight="20dp"
             android:paddingBottom="10dp"
-            android:text="Already have a Account"
+            android:text="@string/have_account"
             android:textColor="@color/Dark_Coffee"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.239"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/registerButton"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <Button
-            android:id="@+id/registerSignin"
-            android:layout_width="116dp"
-            android:layout_height="50dp"
-            android:backgroundTint="#D1A370"
-            android:text="SIGN IN"
-            android:textColor="@color/Dark_Coffee"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:cornerRadius="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/haveAccountText"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-            app:layout_constraintVertical_bias="0.725" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.906" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

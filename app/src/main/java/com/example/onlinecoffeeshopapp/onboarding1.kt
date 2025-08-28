@@ -1,12 +1,15 @@
 package com.example.onlinecoffeeshopapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class onboarding1 : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -15,6 +18,13 @@ class onboarding1 : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val onboardin1Next = findViewById<Button>(R.id.onboardin1Next)
+
+        onboardin1Next.setOnClickListener {
+            val intent = Intent(this, onboarding2::class.java)
+            startActivity(intent)
         }
     }
 }

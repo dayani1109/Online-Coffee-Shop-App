@@ -7,38 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".CappuccinoPage">
 
-    <TextView
-        android:id="@+id/blackTeaTotalPrice"
-        android:layout_width="157dp"
-        android:layout_height="36dp"
-        android:background="@color/coffee_brown"
-        android:text="Rs. 1500.00"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.799"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.848" />
-
-    <TextView
-        android:id="@+id/sugerLevel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Milk"
-        android:textColor="@color/coffee_brown"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/blackTeaDescription"
-        app:layout_constraintVertical_bias="0.29" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
         android:layout_width="409dp"
@@ -56,15 +24,15 @@
         app:layout_constraintVertical_bias="0.0">
 
         <ImageView
-            android:id="@+id/backArrow3"
-            android:layout_width="43dp"
-            android:layout_height="44dp"
+            android:id="@+id/CappuBack"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintHorizontal_bias="0.042"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.108"
+            app:layout_constraintVertical_bias="0.069"
             app:srcCompat="@drawable/backarrow" />
 
         <ImageView
@@ -73,57 +41,60 @@
             android:layout_height="250dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.559"
+            app:layout_constraintHorizontal_bias="0.566"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.633"
+            app:layout_constraintVertical_bias="0.774"
             app:srcCompat="@drawable/espresso" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/blackTeapageName"
+        android:id="@+id/cappuName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="serif"
-        android:text="Cappuccino"
+        android:text="@string/cappuccino_name"
         android:textColor="@color/Dark_Coffee"
-        android:textSize="24sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_bias="0.024" />
 
     <TextView
-        android:id="@+id/blackTeaDescription"
+        android:id="@+id/cappuDescription"
         android:layout_width="389dp"
         android:layout_height="68dp"
-        android:text="A classic Italian coffee made with equal parts espresso, steamed milk, and milk foam. Rich and bold at the base, with a creamy, airy finish on top."
+        android:text="@string/cappuccino_description"
         android:textColor="#744D30"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/blackTeapageName"
+        app:layout_constraintTop_toBottomOf="@+id/cappuName"
         app:layout_constraintVertical_bias="0.028" />
 
     <TextView
-        android:id="@+id/sizeText3"
+        android:id="@+id/cappuSize"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Size"
+        android:text="@string/size_label"
         android:textColor="@color/coffee_brown"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintEnd_toEndOf="@id/Size"
+        app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/blackTeaDescription"
-        app:layout_constraintVertical_bias="0.078" />
+        app:layout_constraintTop_toBottomOf="@+id/cappuDescription"
+        app:layout_constraintVertical_bias="0.111" />
 
     <LinearLayout
+        android:id="@+id/Size"
         android:layout_width="326dp"
         android:layout_height="43dp"
         android:orientation="horizontal"
@@ -131,76 +102,89 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.882"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.693">
+        app:layout_constraintTop_toBottomOf="@+id/cappuDescription"
+        app:layout_constraintVertical_bias="0.07">
 
-        <TextView
-            android:id="@+id/Ssize3"
-            android:layout_width="30dp"
-            android:layout_height="match_parent"
+        <com.google.android.material.chip.Chip
+            android:id="@+id/cappuS"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:background="#A77A48"
-            android:text="S"
+            android:backgroundTint="#A77A48"
+            android:text="@string/size_small"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/Msize3"
-            android:layout_width="30dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="5dp"
+        <com.google.android.material.chip.Chip
+            android:id="@+id/cappuM"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:background="#A77A48"
-            android:text="M"
+            android:backgroundTint="#A77A48"
+            android:text="@string/size_medium"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/Lsize3"
-            android:layout_width="30dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
+        <com.google.android.material.chip.Chip
+            android:id="@+id/cappuL"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
-            android:layout_marginBottom="5dp"
             android:layout_weight="1"
-            android:background="#A77A48"
-            android:text="L"
+            android:backgroundTint="#A77A48"
+            android:text="@string/size_large"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
+
     </LinearLayout>
 
     <TextView
-        android:id="@+id/blackTeaTotal"
-        android:layout_width="151dp"
+        android:id="@+id/cappuTotal"
+        android:layout_width="153dp"
         android:layout_height="36dp"
         android:background="@color/coffee_brown"
-        android:text="Total"
+        android:text="@string/total_label"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintHorizontal_bias="0.24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.848" />
+        app:layout_constraintTop_toBottomOf="@+id/milkType"
+        app:layout_constraintVertical_bias="0.326" />
+
+    <TextView
+        android:id="@+id/cappuTotalPrice"
+        android:layout_width="151dp"
+        android:layout_height="36dp"
+        android:background="@color/coffee_brown"
+        android:text="Rs. 1500.00"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/milkType"
+        app:layout_constraintVertical_bias="0.326" />
 
     <LinearLayout
+        android:id="@+id/milkType"
         android:layout_width="326dp"
         android:layout_height="43dp"
         android:orientation="horizontal"
@@ -208,52 +192,46 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.882"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.767">
+        app:layout_constraintTop_toTopOf="@id/Size"
+        app:layout_constraintVertical_bias="0.192">
 
-        <TextView
-            android:id="@+id/level1"
-            android:layout_width="30dp"
-            android:layout_height="match_parent"
+        <com.google.android.material.chip.Chip
+            android:id="@+id/cappudairy"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:background="#A77A48"
-            android:text="Dairy"
+            android:backgroundTint="#A77A48"
+            android:text="@string/milk_dairy"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/level2"
-            android:layout_width="3dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="5dp"
+        <com.google.android.material.chip.Chip
+            android:id="@+id/cappuoat"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:background="#A77A48"
-            android:text="Oat"
+            android:backgroundTint="#A77A48"
+            android:text="@string/milk_oat"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/level3"
-            android:layout_width="30dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
+        <com.google.android.material.chip.Chip
+            android:id="@+id/cappualmond"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
-            android:layout_marginBottom="5dp"
             android:layout_weight="1"
-            android:background="#A77A48"
-            android:text="Almond"
+            android:backgroundTint="#A77A48"
+            android:text="@string/milk_almond"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="20sp"
@@ -261,18 +239,32 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/blackTeabtn1"
-        android:layout_width="162dp"
-        android:layout_height="52dp"
+        android:id="@+id/cappuBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:backgroundTint="#594430"
-        android:text="Add to Cart"
+        android:text="@string/add_to_cart"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.958" />
+        app:layout_constraintTop_toBottomOf="@id/cappuTotal"
+        app:layout_constraintVertical_bias="0.395" />
+
+    <TextView
+        android:id="@+id/CappumilkType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/milk_label"
+        android:textColor="@color/coffee_brown"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/milkType"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cappuSize" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

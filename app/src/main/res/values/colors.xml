@@ -13,16 +13,10 @@
     <color name="Dark_Chocolate_Brown">#594430</color> <!--some Button background-->
     <color name="Cinnamon">#934A12</color> <!--some Button background-->
     <color name="Light_Coffee">#BD9169</color> <!--some Button background-->
-
-    815C3A
-    592A0E
-    673209
-    B67849
-    693829
-    C0824A
-
-
-
-
-
+    <color name="mocha_brown">#815C3A</color>
+    <color name="espresso">#592A0E</color>
+    <color name="rustic_clay">#673209</color>
+    <color name="amber_wood">#B67849</color>
+    <color name="chestnut_ember">#693829</color>
+    <color name="sandy_copper">#C0824A</color>
 </resources>

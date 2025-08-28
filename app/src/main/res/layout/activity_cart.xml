@@ -7,35 +7,64 @@
     android:layout_height="match_parent"
     tools:context=".Cart">
 
-    <TextView
-        android:id="@+id/latteCartmilk2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Almond Milk"
-        android:textColor="#934A12"
-        android:textSize="18sp"
-        android:textStyle="bold"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="424dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="631dp"
+        android:background="@color/soft_beige"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.783"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.555" />
+        app:layout_constraintVertical_bias="0.0">
 
-    <TextView
-        android:id="@+id/latteCartPrice2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rs.1500.00"
-        android:textColor="#934A12"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        <TextView
+            android:id="@+id/cartPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Cart"
+            android:textAlignment="center"
+            android:textColor="@color/Dark_Coffee"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.474"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.509" />
+
+        <ImageView
+            android:id="@+id/cartBackarrow"
+            android:layout_width="35dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.258"
+            app:srcCompat="@drawable/backarrow" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/cartLatteImage"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintHorizontal_bias="0.243"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.603" />
+        app:layout_constraintVertical_bias="0.602"
+        app:srcCompat="@drawable/latte" />
 
     <CheckBox
         android:id="@+id/checkBoxCart2"
@@ -46,7 +75,45 @@
         app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.575" />
+        app:layout_constraintVertical_bias="0.563" />
+
+    <ImageView
+        android:id="@+id/edit1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178"
+        app:srcCompat="@drawable/edit" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCart1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.298" />
+
+    <TextView
+        android:id="@+id/cappCartPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs.1500.00"
+        android:textColor="#934A12"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.323" />
 
     <LinearLayout
         android:layout_width="117dp"
@@ -57,7 +124,7 @@
         app:layout_constraintHorizontal_bias="0.826"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.678">
+        app:layout_constraintVertical_bias="0.666">
 
         <TextView
             android:id="@+id/minuz"
@@ -106,64 +173,17 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/latteCartNmae2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Latte"
-        android:textColor="#934A12"
-        android:textSize="18sp"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/delete1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.654"
+        app:layout_constraintHorizontal_bias="0.959"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.504" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
-        android:layout_width="413dp"
-        android:layout_height="101dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="631dp"
-        android:background="@color/soft_beige"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/cartPage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="serif"
-            android:text="Cart"
-            android:textAlignment="center"
-            android:textColor="@color/Dark_Coffee"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.724" />
-
-        <ImageView
-            android:id="@+id/cartBackarrow"
-            android:layout_width="43dp"
-            android:layout_height="34dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.076"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.492"
-            app:srcCompat="@drawable/backarrow" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintVertical_bias="0.178"
+        app:srcCompat="@drawable/delete123" />
 
     <ImageView
         android:id="@+id/cartImage1"
@@ -174,23 +194,23 @@
         app:layout_constraintHorizontal_bias="0.277"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.265"
+        app:layout_constraintVertical_bias="0.278"
         app:srcCompat="@drawable/espresso" />
 
     <TextView
-        android:id="@+id/cappCartNmae"
+        android:id="@+id/latteCartmilk2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cappuccino"
+        android:text="Almond Milk"
         android:textColor="#934A12"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.762"
+        app:layout_constraintHorizontal_bias="0.786"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.217" />
+        app:layout_constraintVertical_bias="0.544" />
 
     <TextView
         android:id="@+id/cappCartSize"
@@ -205,33 +225,7 @@
         app:layout_constraintHorizontal_bias="0.687"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.265" />
-
-    <TextView
-        android:id="@+id/cappCartPrice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rs.1500.00"
-        android:textColor="#934A12"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.764"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.314" />
-
-    <CheckBox
-        android:id="@+id/checkBoxCart1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.289" />
+        app:layout_constraintVertical_bias="0.274" />
 
     <LinearLayout
         android:layout_width="117dp"
@@ -242,7 +236,7 @@
         app:layout_constraintHorizontal_bias="0.823"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.388">
+        app:layout_constraintVertical_bias="0.398">
 
         <TextView
             android:id="@+id/minCart"
@@ -291,28 +285,16 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/cartLatteImage"
-        android:layout_width="152dp"
-        android:layout_height="152dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.243"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.616"
-        app:srcCompat="@drawable/latte" />
-
-    <ImageView
-        android:id="@+id/edit1"
+        android:id="@+id/delete2"
         android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_height="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.961"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.168"
-        app:srcCompat="@drawable/edit" />
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintVertical_bias="0.459"
+        app:srcCompat="@drawable/delete123" />
 
     <ImageView
         android:id="@+id/edit2"
@@ -323,47 +305,65 @@
         app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.473"
+        app:layout_constraintVertical_bias="0.459"
         app:srcCompat="@drawable/edit" />
 
-    <ImageView
-        android:id="@+id/delete1"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.959"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.168"
-        app:srcCompat="@drawable/delete123" />
-
-    <ImageView
-        android:id="@+id/delete2"
-        android:layout_width="20dp"
-        android:layout_height="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.961"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout3"
-        app:layout_constraintVertical_bias="0.47"
-        app:srcCompat="@drawable/delete123" />
-
     <TextView
-        android:id="@+id/cartTotal"
+        android:id="@+id/cappCartNmae"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total Payment"
-        android:textColor="#592A0E"
-        android:textSize="24sp"
+        android:text="Cappuccino"
+        android:textColor="#934A12"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintHorizontal_bias="0.763"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout3"
-        app:layout_constraintVertical_bias="0.798" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227" />
+
+    <ImageView
+        android:id="@+id/cartcappuImage"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283"
+        app:srcCompat="@drawable/espresso" />
+
+    <TextView
+        android:id="@+id/latteCartPrice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs.1500.00"
+        android:textColor="#934A12"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.591" />
+
+    <TextView
+        android:id="@+id/latteCartNmae2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latte"
+        android:textColor="#934A12"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.654"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493" />
 
     <TextView
         android:id="@+id/carTotalprice"
@@ -375,10 +375,25 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.864"
+        app:layout_constraintHorizontal_bias="0.878"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.798" />
+        app:layout_constraintVertical_bias="0.769" />
+
+    <TextView
+        android:id="@+id/cartTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Payment"
+        android:textColor="#592A0E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintVertical_bias="0.769" />
 
     <Button
         android:id="@+id/checkoutBtn"
@@ -393,17 +408,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.907" />
-
-    <ImageView
-        android:id="@+id/cartcappuImage"
-        android:layout_width="152dp"
-        android:layout_height="152dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.277"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271"
-        app:srcCompat="@drawable/espresso" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

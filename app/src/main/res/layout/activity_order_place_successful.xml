@@ -9,132 +9,102 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout6"
-        android:layout_width="418dp"
-        android:layout_height="80dp"
+        android:layout_width="424dp"
+        android:layout_height="96dp"
         android:layout_marginTop="1dp"
         android:layout_marginBottom="668dp"
         android:background="@color/soft_beige"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.722">
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/orderPlaceBackArrow"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.041"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.262"
+            app:srcCompat="@drawable/backarrow" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
         android:id="@+id/OrderplaceImageLogo"
-        android:layout_width="190dp"
-        android:layout_height="176dp"
+        android:layout_width="178dp"
+        android:layout_height="163dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/constraintLayout6"
         app:layout_constraintVertical_bias="0.114"
-        app:srcCompat="@drawable/logo_3" />
+        app:srcCompat="@drawable/newlogo" />
 
-    <TextView
-        android:id="@+id/OrderplaceText"
-        android:layout_width="400dp"
-        android:layout_height="58dp"
-        android:fontFamily="serif"
-        android:text="Order Place Successful "
-        android:textAlignment="center"
-        android:textColor="#693829"
-        android:textSize="32sp"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/OrderplaceImage"
+        android:layout_width="106dp"
+        android:layout_height="83dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.317" />
+        app:layout_constraintVertical_bias="0.442"
+        app:srcCompat="@drawable/successfulorder" />
 
     <TextView
         android:id="@+id/OrderplaceThanks"
         android:layout_width="240dp"
         android:layout_height="30dp"
-        android:text="Thank you for your Order"
+        android:text="@string/thank_you_order"
         android:textAlignment="center"
         android:textColor="#C26C20"
         android:textSize="16sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.544" />
-
-    <Button
-        android:id="@+id/OrderplaceTrackBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#673209"
-        android:text="Track Order"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout6"
-        app:layout_constraintVertical_bias="0.906" />
-
-    <ImageView
-        android:id="@+id/OrderplaceBackarrow"
-        android:layout_width="40dp"
-        android:layout_height="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout6"
-        app:layout_constraintVertical_bias="0.136"
-        app:srcCompat="@drawable/backarrow" />
-
-    <ImageView
-        android:id="@+id/OrderplaceImage"
-        android:layout_width="117dp"
-        android:layout_height="104dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.432"
-        app:srcCompat="@drawable/successfulorder" />
+        app:layout_constraintVertical_bias="0.533" />
 
     <TextView
         android:id="@+id/OrderplaceArrive"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Arriving 10 - 15 minutes"
+        android:text="@string/arriving_time"
         android:textAlignment="center"
         android:textColor="#C26C20"
         android:textSize="16sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/constraintLayout6"
-        app:layout_constraintVertical_bias="0.587" />
+        app:layout_constraintVertical_bias="0.576" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout11"
         android:layout_width="257dp"
         android:layout_height="124dp"
         android:layout_marginStart="69dp"
         android:layout_marginTop="21dp"
         android:layout_marginEnd="67dp"
-        android:layout_marginBottom="36dp"
         android:background="#C0824A"
-        app:layout_constraintBottom_toTopOf="@+id/OrderplaceTrackBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/OrderplaceArrive">
+        app:layout_constraintTop_toBottomOf="@+id/OrderplaceArrive"
+        app:layout_constraintVertical_bias="0.114">
 
         <TextView
             android:id="@+id/OrderplaceOrderno"
@@ -166,5 +136,36 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.63" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/orderplaceTrackbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#673209"
+        android:text="Track Order"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout11"
+        app:layout_constraintVertical_bias="0.292" />
+
+    <TextView
+        android:id="@+id/OrderplaceText"
+        android:layout_width="400dp"
+        android:layout_height="58dp"
+        android:fontFamily="serif"
+        android:text="Order Place Successful "
+        android:textAlignment="center"
+        android:textColor="#693829"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout6"
+        app:layout_constraintVertical_bias="0.339" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

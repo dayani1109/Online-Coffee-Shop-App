@@ -8,47 +8,52 @@
     android:background="@color/soft_beige"
     tools:context=".onboarding1">
 
-    <ImageView
-        android:id="@+id/onboardin1IAnime"
-        android:layout_width="267dp"
-        android:layout_height="334dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.103"
-        app:srcCompat="@drawable/_f16a413b698f67c34e1e3938d388e4a" />
 
     <TextView
         android:id="@+id/onboardin1IText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Browse and order from a variety of freshly brewed coffees."
+        android:layout_width="340dp"
+        android:layout_height="103dp"
+        android:fontFamily="serif"
+        android:text="@string/onboarding1_text"
         android:textAlignment="center"
         android:textColor="@color/soft_creamy_beige"
-        android:textSize="30sp"
+        android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.774"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/onboardin1IAnime"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636" />
 
     <Button
         android:id="@+id/onboardin1Next"
-        android:layout_width="123dp"
-        android:layout_height="58dp"
+        android:layout_width="133dp"
+        android:layout_height="52dp"
         android:backgroundTint="@color/coffee_brown"
-        android:text="NEXT"
+        android:text="@string/onboarding1_next"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintHorizontal_bias="0.539"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/onboardin1IText"
-        app:layout_constraintVertical_bias="0.372" />
+        app:layout_constraintVertical_bias="0.397" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/onboarding3Text"
+        android:layout_width="241dp"
+        android:layout_height="268dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/my_gif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.159" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

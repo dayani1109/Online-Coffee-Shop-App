@@ -9,8 +9,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout5"
-        android:layout_width="420dp"
-        android:layout_height="89dp"
+        android:layout_width="424dp"
+        android:layout_height="96dp"
         android:layout_marginStart="1dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="609dp"
@@ -37,18 +37,17 @@
             app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.697" />
+            app:layout_constraintVertical_bias="0.509" />
 
         <ImageView
-            android:id="@+id/profileBackarrow"
+            android:id="@+id/checkoutBackarrow"
             android:layout_width="30dp"
             android:layout_height="30dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.082"
+            app:layout_constraintHorizontal_bias="0.086"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.491"
             app:srcCompat="@drawable/backarrow" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -350,7 +349,7 @@
         app:layout_constraintVertical_bias="0.804" />
 
     <Button
-        android:id="@+id/Profilelogout"
+        android:id="@+id/confirmPayBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#673209"

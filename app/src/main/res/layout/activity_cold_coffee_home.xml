@@ -8,480 +8,448 @@
     android:background="@color/soft_beige"
     tools:context=".ColdCoffeeHome">
 
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="414dp"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:paddingLeft="20dp"
-        android:paddingRight="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04">
-
-        <TextView
-            android:id="@+id/home3Text"
-            android:layout_width="148dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif-black"
-            android:paddingLeft="20dp"
-            android:paddingTop="10dp"
-            android:text="HOME"
-            android:textColor="@color/Dark_Coffee"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/hoTeaHomeText1"
-            android:layout_width="0dp"
-            android:layout_height="28dp"
-            android:layout_weight="1"
-            android:text="Hi! John"
-            android:textAlignment="center"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/homeProfileImage3"
-            android:layout_width="49dp"
-            android:layout_height="49dp"
-            tools:srcCompat="@tools:sample/avatars" />
-
-        <ImageView
-            android:id="@+id/cartIcon3"
-            android:layout_width="49dp"
-            android:layout_height="49dp"
-            app:srcCompat="@drawable/cart" />
-
-    </LinearLayout>
-
     <TextView
-        android:id="@+id/SearchText3"
-        android:layout_width="351dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="615dp"
-        android:background="#7EEBE6E2"
-        android:paddingLeft="40dp"
-        android:paddingTop="3dp"
-        android:text="Search"
-        android:textAlignment="viewStart"
-        android:textSize="16sp"
+        android:id="@+id/coldcoffeeHomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="@string/home_title"
+        android:textColor="@color/Dark_Coffee"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
 
-    <SearchView
-        android:id="@+id/searchView3"
-        android:layout_width="23dp"
-        android:layout_height="29dp"
+    <ImageView
+        android:id="@+id/coldCoffeeCart"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintHorizontal_bias="0.956"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-        app:layout_constraintVertical_bias="0.011" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout5"
-        android:layout_width="414dp"
-        android:layout_height="47dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView3"
-        app:layout_constraintVertical_bias="0.017">
-
-        <Button
-            android:id="@+id/hottea_hotcoffebtn"
-            android:layout_width="120dp"
-            android:layout_height="48dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:backgroundTint="#C3A685"
-            android:text="Hot Coffee"
-            android:textColor="#632B20"
-            android:textSize="14sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/hottea_coldcoffebtn"
-            android:layout_width="128dp"
-            android:layout_height="48dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:backgroundTint="#AF732B"
-            android:text="Cold Coffee"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/hottea_hotteabtn"
-            android:layout_width="104dp"
-            android:layout_height="48dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="20dp"
-            android:layout_weight="1"
-            android:backgroundTint="#C3A685"
-            android:text="Hot Tea"
-            android:textColor="#632B20"
-            android:textSize="14sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011"
+        app:srcCompat="@drawable/cart" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="417dp"
-        android:layout_height="943dp"
+        android:id="@+id/constraintLayout9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#E2DDDD"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-        app:layout_constraintVertical_bias="0.0">
-
-        <ImageView
-            android:id="@+id/whiteRec61"
-            android:layout_width="170dp"
-            android:layout_height="270dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.87"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.888"
-            app:srcCompat="@drawable/rectangle" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084">
 
         <TextView
-            android:id="@+id/MasalaChaiprice"
+            android:id="@+id/search2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rs.1200.00"
-            android:textColor="@color/Dark_Coffee"
-            android:textSize="16sp"
-            android:textStyle="bold"
+            android:text="@string/search_hint"
+            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.79"
+            app:layout_constraintHorizontal_bias="0.179"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.875" />
-
-        <TextView
-            android:id="@+id/MasalaChaiNmae"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Iced Americano"
-            android:textColor="@color/Dark_Coffee"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.815"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.833" />
+            app:layout_constraintVertical_bias="0.461" />
 
         <ImageView
-            android:id="@+id/whiteRec51"
-            android:layout_width="170dp"
-            android:layout_height="270dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.113"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.887"
-            app:srcCompat="@drawable/rectangle" />
-
-        <TextView
-            android:id="@+id/gingerTeaPrice"
+            android:id="@+id/searchicon2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rs.1900.00"
-            android:textColor="@color/Dark_Coffee"
-            android:textSize="16sp"
-            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="2dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.206"
+            app:layout_constraintEnd_toStartOf="@+id/search2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.876" />
-
-        <TextView
-            android:id="@+id/gingerTeaName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Iced Macha Latte"
-            android:textColor="@color/Dark_Coffee"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.163"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.832" />
-
-        <ImageView
-            android:id="@+id/whiteRec41"
-            android:layout_width="170dp"
-            android:layout_height="270dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.87"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.468"
-            app:srcCompat="@drawable/rectangle" />
-
-        <TextView
-            android:id="@+id/LemonTeaPrice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rs.1400.00"
-            android:textColor="@color/Dark_Coffee"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.79"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.573" />
-
-        <TextView
-            android:id="@+id/lemonTeaName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Iced Vanilla Latte"
-            android:textColor="@color/Dark_Coffee"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.829"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.533" />
-
-        <ImageView
-            android:id="@+id/whiteRec21"
-            android:layout_width="170dp"
-            android:layout_height="270dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="568dp"
-            android:foregroundTint="#D56666"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/whiteRec11"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/rectangle" />
-
-        <TextView
-            android:id="@+id/herbalTeaprice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rs.1550.00"
-            android:textColor="@color/Dark_Coffee"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.769"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.269" />
-
-        <TextView
-            android:id="@+id/herbalTeaName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Coffee Milkshake"
-            android:textColor="@color/Dark_Coffee"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.835"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.232" />
-
-        <ImageView
-            android:id="@+id/whiteRec11"
-            android:layout_width="170dp"
-            android:layout_height="270dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="28dp"
-            android:layout_marginBottom="568dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/rectangle" />
-
-        <TextView
-            android:id="@+id/BlackTeaPrice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rs.1550.00"
-            android:textColor="@color/Dark_Coffee"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.206"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.27" />
-
-        <TextView
-            android:id="@+id/BlackTeaName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Iced Coffee"
-            android:textColor="@color/Dark_Coffee"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.21"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.233" />
-
-        <ImageView
-            android:id="@+id/whiteRec31"
-            android:layout_width="170dp"
-            android:layout_height="270dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.113"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.466"
-            app:srcCompat="@drawable/rectangle" />
-
-        <TextView
-            android:id="@+id/greenTeaPrice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rs.1550.00"
-            android:textColor="@color/Dark_Coffee"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.209"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.573" />
-
-        <TextView
-            android:id="@+id/greenTeaName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Iced Hazelnut Coffee"
-            android:textColor="@color/Dark_Coffee"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.142"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.533" />
-
-        <ImageView
-            android:id="@+id/icedcoffeeImage"
-            android:layout_width="161dp"
-            android:layout_height="152dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.109"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.051"
-            app:srcCompat="@drawable/icedcoffee" />
-
-        <ImageView
-            android:id="@+id/CoffeeMilkshakeImage"
-            android:layout_width="131dp"
-            android:layout_height="129dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.832"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.077"
-            app:srcCompat="@drawable/coffemilkshake" />
-
-        <ImageView
-            android:id="@+id/IcedHazelnutCoffeeImage"
-            android:layout_width="131dp"
-            android:layout_height="129dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.167"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.42"
-            app:srcCompat="@drawable/hazelnut" />
-
-        <ImageView
-            android:id="@+id/IcedVanillaLatteImage"
-            android:layout_width="131dp"
-            android:layout_height="129dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.832"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.427"
-            app:srcCompat="@drawable/vanilalatte" />
-
-        <ImageView
-            android:id="@+id/IcedMachaLatteImage"
-            android:layout_width="131dp"
-            android:layout_height="129dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.167"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.759"
-            app:srcCompat="@drawable/icemacha" />
-
-        <ImageView
-            android:id="@+id/IcedAmericanoImage"
-            android:layout_width="131dp"
-            android:layout_height="129dp"
-            android:layout_marginTop="616dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.825"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/iceamericano" />
-
+            app:srcCompat="@android:drawable/ic_menu_search" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/hotcoffeeBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="#BD9466"
+            android:text="@string/hot_coffee"
+            android:textColor="#632B20"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/coldcoffeeBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="#AF732B"
+            android:text="@string/cold_coffee"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/hotteaBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#BD9466"
+            android:text="@string/hot_tea"
+            android:textColor="#632B20"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="1dp"
+        android:background="#F5E0C8"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <GridLayout
+            android:id="@+id/gridCoffee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="4"
+            android:rowOrderPreserved="false"
+            android:useDefaultMargins="true">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <ImageView
+                    android:id="@+id/imgcoffeemilkshake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/coffemilkshake" />
+
+                <TextView
+                    android:id="@+id/namecoffeemilkshake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Coffee Milkshake"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pricecoffeemilkshake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.1550.00"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <ImageView
+                    android:id="@+id/imgmochaIcedcoffee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/mochaiced" />
+
+                <TextView
+                    android:id="@+id/namemochaIcedcoffee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Mocha Iced Coffee"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pricemochaIcedcoffee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.1900.00"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <ImageView
+                    android:id="@+id/imgicecoffee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/icedcoffee" />
+
+                <TextView
+                    android:id="@+id/nameicecoffee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Iced Coffee"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/priceicecoffee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.1550.00"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <ImageView
+                    android:id="@+id/imgicemacha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/icemacha" />
+
+                <TextView
+                    android:id="@+id/nameicemacha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Iced Macha Latte"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/priceicemacha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.1900.00"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <ImageView
+                    android:id="@+id/imgicedamericano"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/iceamericano" />
+
+                <TextView
+                    android:id="@+id/nameicedamericano"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Iced Americano"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/priceicedamericano"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.900.00"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <ImageView
+                    android:id="@+id/imgVanilaLatte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/vanilalatte" />
+
+                <TextView
+                    android:id="@+id/nameVanilaLatte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Iced Vanila Latte"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/priceVanilaLatte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.1400.00"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <ImageView
+                    android:id="@+id/imgHazelnut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/hazelnut" />
+
+                <TextView
+                    android:id="@+id/nameHazelnut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Iced Hazelnut Coffee"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/priceHazelnut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.1550.00"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <ImageView
+                    android:id="@+id/imgcoldbrew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/coldbrew" />
+
+                <TextView
+                    android:id="@+id/namecoldbrew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Cold Brew"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pricecoldbrew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs.1400.00"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+        </GridLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/coldcoffeProfile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -58,8 +58,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout5"
-        android:layout_width="412dp"
-        android:layout_height="101dp"
+        android:layout_width="424dp"
+        android:layout_height="96dp"
         android:layout_marginStart="1dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="609dp"
@@ -83,50 +83,36 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.697" />
+            app:layout_constraintVertical_bias="0.472" />
 
         <ImageView
-            android:id="@+id/profileBackarrow"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:id="@+id/profilebackarrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.076"
+            app:layout_constraintHorizontal_bias="0.077"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.728"
+            app:layout_constraintVertical_bias="0.491"
             app:srcCompat="@drawable/backarrow" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Button
-        android:id="@+id/Profilelogout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#A85E25"
-        android:text="Log Out"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.84" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
         android:id="@+id/ProfileImageProfile"
         android:layout_width="108dp"
         android:layout_height="103dp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.213"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:src="@drawable/profile" />
 
     <ImageView
         android:id="@+id/Profileedit"
@@ -147,7 +133,7 @@
         android:layout_width="248dp"
         android:layout_height="31dp"
         android:background="#D9D9D9"
-        android:text="Name"
+        android:text="name"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -163,7 +149,7 @@
         android:layout_width="248dp"
         android:layout_height="31dp"
         android:background="#D9D9D9"
-        android:text="Email"
+        android:text="email"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -245,5 +231,20 @@
         app:layout_constraintTop_toTopOf="@+id/constraintLayout5"
         app:layout_constraintVertical_bias="0.705"
         app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <Button
+        android:id="@+id/Logoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#A85E25"
+        android:text="Log Out"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.828" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

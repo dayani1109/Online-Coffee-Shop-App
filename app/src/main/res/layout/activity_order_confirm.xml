@@ -9,142 +9,76 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout6"
-        android:layout_width="418dp"
-        android:layout_height="80dp"
+        android:layout_width="424dp"
+        android:layout_height="96dp"
         android:layout_marginTop="1dp"
         android:layout_marginBottom="668dp"
         android:background="@color/soft_beige"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.722">
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/OrderconfirmBackarrow"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.041"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.262"
+            app:srcCompat="@drawable/backarrow" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
         android:id="@+id/OrderplaceImageLogo"
-        android:layout_width="167dp"
-        android:layout_height="155dp"
+        android:layout_width="177dp"
+        android:layout_height="183dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/constraintLayout6"
-        app:layout_constraintVertical_bias="0.158"
-        app:srcCompat="@drawable/logo_3" />
-
-    <TextView
-        android:id="@+id/OrderplaceText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:text="Order Confirmd "
-        android:textAlignment="center"
-        android:textColor="#693829"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.329" />
-
-    <TextView
-        android:id="@+id/OrderplaceThanks"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Thank you for your Order"
-        android:textColor="#C26C20"
-        android:textSize="16sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.393" />
+        app:layout_constraintVertical_bias="0.095"
+        app:srcCompat="@drawable/newlogo" />
 
     <TextView
         android:id="@+id/orderconfirmArrived"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Arriving 10 - 15 minutes"
+        android:text="@string/arriving_time"
         android:textColor="#C26C20"
         android:textSize="16sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.543"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.424" />
+        app:layout_constraintVertical_bias="0.471" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout8"
-        android:layout_width="341dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="207dp"
-        android:orientation="vertical"
+    <TextView
+        android:id="@+id/OrderplaceThanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thank_you_order"
+        android:textColor="#C26C20"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/orderconfirmArrived"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/orderconfirmName"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:text="Name"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/orderconfirmAddress"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:text="Address"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/orderconfirmPhone"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:text="Phone Number"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/orderconfirmCard"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:text="Card Number"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/orderconfirmAmount"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:text="Amount"
-            android:textSize="18sp" />
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44" />
 
     <Button
-        android:id="@+id/OrderplaceTrackBtn"
+        android:id="@+id/orderconfirmBtn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#673209"
@@ -155,7 +89,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/constraintLayout6"
-        app:layout_constraintVertical_bias="0.799" />
+        app:layout_constraintVertical_bias="0.841" />
 
     <Button
         android:id="@+id/orderconfirmCancelBtn"
@@ -167,21 +101,85 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.893" />
+        app:layout_constraintVertical_bias="0.931" />
 
-    <ImageView
-        android:id="@+id/OrderplaceBackarrow"
-        android:layout_width="40dp"
-        android:layout_height="30dp"
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="338dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="19dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout6"
-        app:layout_constraintVertical_bias="0.143"
-        app:srcCompat="@drawable/backarrow" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.652">
+
+        <TextView
+            android:id="@+id/orderconfirmName"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Name"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="365dp" />
+
+        <TextView
+            android:id="@+id/orderconfirmAddress"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Address"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="405dp" />
+
+        <TextView
+            android:id="@+id/orderconfirmPhone"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Phone Number"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="445dp" />
+
+        <TextView
+            android:id="@+id/orderconfirmCard"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Card Number"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="485dp" />
+
+        <TextView
+            android:id="@+id/orderconfirmAmount"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Amount"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/OrderplaceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="@string/order_confirmed"
+        android:textAlignment="center"
+        android:textColor="#693829"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
